@@ -17,6 +17,11 @@
 		88C9B3942779504400CAD1DB /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3932779504400CAD1DB /* ApiService.swift */; };
 		88C9B3962779574300CAD1DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3952779574300CAD1DB /* User.swift */; };
 		88C9B39827795B2900CAD1DB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B39727795B2900CAD1DB /* MainViewController.swift */; };
+		88C9B39A27795EF100CAD1DB /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B39927795EF100CAD1DB /* SignInViewModel.swift */; };
+		88C9B39C27795FAA00CAD1DB /* Observalble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B39B27795FAA00CAD1DB /* Observalble.swift */; };
+		88C9B39E2779E5C100CAD1DB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B39D2779E5C100CAD1DB /* RegisterViewController.swift */; };
+		88C9B3A02779E5E500CAD1DB /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B39F2779E5E500CAD1DB /* RegisterView.swift */; };
+		88C9B3A22779E6B600CAD1DB /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3A12779E6B600CAD1DB /* RegisterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		88C9B3932779504400CAD1DB /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		88C9B3952779574300CAD1DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		88C9B39727795B2900CAD1DB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		88C9B39927795EF100CAD1DB /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		88C9B39B27795FAA00CAD1DB /* Observalble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observalble.swift; sourceTree = "<group>"; };
+		88C9B39D2779E5C100CAD1DB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		88C9B39F2779E5E500CAD1DB /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		88C9B3A12779E6B600CAD1DB /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,13 +77,18 @@
 				88C9B379277947F600CAD1DB /* AppDelegate.swift */,
 				88C9B37B277947F600CAD1DB /* SceneDelegate.swift */,
 				88C9B37D277947F600CAD1DB /* SignInViewController.swift */,
+				88C9B39727795B2900CAD1DB /* MainViewController.swift */,
 				88C9B382277947F800CAD1DB /* Assets.xcassets */,
 				88C9B384277947F800CAD1DB /* LaunchScreen.storyboard */,
 				88C9B387277947F800CAD1DB /* Info.plist */,
 				88C9B38D27794BC400CAD1DB /* SignInView.swift */,
 				88C9B3932779504400CAD1DB /* ApiService.swift */,
 				88C9B3952779574300CAD1DB /* User.swift */,
-				88C9B39727795B2900CAD1DB /* MainViewController.swift */,
+				88C9B39927795EF100CAD1DB /* SignInViewModel.swift */,
+				88C9B39B27795FAA00CAD1DB /* Observalble.swift */,
+				88C9B39D2779E5C100CAD1DB /* RegisterViewController.swift */,
+				88C9B39F2779E5E500CAD1DB /* RegisterView.swift */,
+				88C9B3A12779E6B600CAD1DB /* RegisterViewModel.swift */,
 			);
 			path = Week14;
 			sourceTree = "<group>";
@@ -154,10 +169,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C9B3A02779E5E500CAD1DB /* RegisterView.swift in Sources */,
 				88C9B39827795B2900CAD1DB /* MainViewController.swift in Sources */,
+				88C9B39E2779E5C100CAD1DB /* RegisterViewController.swift in Sources */,
 				88C9B38E27794BC400CAD1DB /* SignInView.swift in Sources */,
 				88C9B3942779504400CAD1DB /* ApiService.swift in Sources */,
+				88C9B39C27795FAA00CAD1DB /* Observalble.swift in Sources */,
 				88C9B3962779574300CAD1DB /* User.swift in Sources */,
+				88C9B3A22779E6B600CAD1DB /* RegisterViewModel.swift in Sources */,
+				88C9B39A27795EF100CAD1DB /* SignInViewModel.swift in Sources */,
 				88C9B37E277947F600CAD1DB /* SignInViewController.swift in Sources */,
 				88C9B37A277947F600CAD1DB /* AppDelegate.swift in Sources */,
 				88C9B37C277947F600CAD1DB /* SceneDelegate.swift in Sources */,

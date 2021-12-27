@@ -16,27 +16,24 @@ enum APIError: Error {
 
 
 class ApiService {
-    static func login(id: String, pass: String, completion: @escaping (User?, APIError?) -> Void) {
+    
+    static func register(username: String, email: String, password: String, completion: @escaping (User?, APIError?) -> Void) {
         
-        let url = URL(string: "http://test.monocoding.com/auth/local")!
-        
+        let url = URL(string: "http://test.monocoding.com/auth/local/register")!
         var request = URLRequest(url: url)
+        request.httpBody = "username=\(username)&password=\(password)&email=\(email)".data(using: .utf8,allowLossyConversion: false)
         request.httpMethod = "POST"
         
-        
-        // String -> data, dic -> JSON serialziation , codable
-        request.httpBody = "identifier=\(id)&password=\(pass)".data(using: .utf8,allowLossyConversion: false)
-        
         URLSession.shared.dataTask(with: request) { data, response, error in
-            print(data, response, error)
             
-            guard error == nil else{
-                completion(nil, .failed)
+            if let error = error {
+                print(error)
+                completion(nil, .invalidResponse)
                 return
-                
             }
+            
             guard let data = data else {
-                completion(nil, .noData)
+                completion(nil, .invalidData)
                 return
             }
             
@@ -49,6 +46,53 @@ class ApiService {
                 completion(nil, .failed)
                 return
             }
+            
+            do{
+                let decoder = JSONDecoder()
+                let userData = try decoder.decode(User.self, from: data)
+                print(userData)
+                completion(userData, nil)
+            }catch{
+                completion(nil, .invalidData)
+            }
+            
+            
+        }.resume()
+        
+
+    }
+    
+    static func login(id: String, pass: String, completion: @escaping (User?, APIError?) -> Void) {
+        
+        let url = URL(string: "http://test.monocoding.com/auth/local")!
+        
+        
+        var request = URLRequest(url: url)
+        request.httpBody = "identifier=\(id)&password=\(pass)".data(using: .utf8,allowLossyConversion: false)
+        request.httpMethod = "POST"
+        
+        // String -> data, dic -> JSON serialziation , codable
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard error == nil else{
+                completion(nil, .failed)
+                return
+
+            }
+            guard let data = data else {
+                completion(nil, .noData)
+                return
+            }
+
+            guard let response = response as? HTTPURLResponse else {
+                completion(nil, .invalidResponse)
+                return
+            }
+
+            guard response.statusCode == 200 else {
+                completion(nil, .failed)
+                return
+            }
 
             do{
                 let decoder = JSONDecoder()
@@ -57,12 +101,7 @@ class ApiService {
             }catch{
                 completion(nil, .invalidData)
             }
-
-
-            
-            
         }.resume()
-        
-        
+
     }
 }

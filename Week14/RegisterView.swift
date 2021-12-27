@@ -1,22 +1,14 @@
 //
-//  SignUpView.swift
+//  RegisterView.swift
 //  Week14
 //
 //  Created by Yundong Lee on 2021/12/27.
 //
 
 import UIKit
-import SnapKit
 
-protocol ViewRepresentable {
-    func setUpView()
-    func setUpConstraints()
-}
-
-
-class SignInView: UIView, ViewRepresentable {
-    
-    let toRegisterButton = UIButton()
+class RegisterView: UIView, ViewRepresentable {
+    let emailTextField = UITextField()
     let userNameTextField = UITextField()
     let passwordTextField = UITextField()
     let signInButton = UIButton()
@@ -32,12 +24,12 @@ class SignInView: UIView, ViewRepresentable {
     }
     
     func setUpView() {
-        addSubview(toRegisterButton)
+        addSubview(emailTextField)
         addSubview(userNameTextField)
         addSubview(passwordTextField)
         addSubview(signInButton)
         
-        toRegisterButton.backgroundColor = .red
+        emailTextField.backgroundColor = .gray
         userNameTextField.backgroundColor = .gray
         passwordTextField.backgroundColor = .gray
         signInButton.backgroundColor = .gray
@@ -45,16 +37,15 @@ class SignInView: UIView, ViewRepresentable {
     }
     
     func setUpConstraints() {
-        
-        toRegisterButton.snp.makeConstraints { make in
-            make.top.equalToSuperview()
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
-            make.height.equalTo(150)
-        }
-        
         userNameTextField.snp.makeConstraints { make in
             make.center.equalToSuperview()
+            make.width.equalTo(self.snp.width).multipliedBy(0.9)
+            make.height.equalTo(50)
+        }
+        
+        emailTextField.snp.makeConstraints { make in
+            make.bottom.equalTo(userNameTextField.snp.top).offset(-20)
+            make.centerX.equalToSuperview()
             make.width.equalTo(self.snp.width).multipliedBy(0.9)
             make.height.equalTo(50)
         }
@@ -73,6 +64,4 @@ class SignInView: UIView, ViewRepresentable {
             make.height.equalTo(50)
         }
     }
-    
-    
 }
