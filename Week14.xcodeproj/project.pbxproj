@@ -22,6 +22,16 @@
 		88C9B39E2779E5C100CAD1DB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B39D2779E5C100CAD1DB /* RegisterViewController.swift */; };
 		88C9B3A02779E5E500CAD1DB /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B39F2779E5E500CAD1DB /* RegisterView.swift */; };
 		88C9B3A22779E6B600CAD1DB /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3A12779E6B600CAD1DB /* RegisterViewModel.swift */; };
+		88C9B3A4277A913A00CAD1DB /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3A3277A913A00CAD1DB /* LottoViewController.swift */; };
+		88C9B3A6277A948D00CAD1DB /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3A5277A948D00CAD1DB /* Lotto.swift */; };
+		88C9B3AA277A961E00CAD1DB /* LottoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3A9277A961E00CAD1DB /* LottoViewModel.swift */; };
+		88C9B3AD277AA62700CAD1DB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3AC277AA62700CAD1DB /* Person.swift */; };
+		88C9B3AF277AAA7E00CAD1DB /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3AE277AAA7E00CAD1DB /* PersonViewModel.swift */; };
+		88C9B3B1277AAB8800CAD1DB /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3B0277AAB8800CAD1DB /* PersonViewController.swift */; };
+		88C9B3B8277B5DC900CAD1DB /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3B7277B5DC900CAD1DB /* BoardViewController.swift */; };
+		88C9B3BB277B5EA100CAD1DB /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3BA277B5EA100CAD1DB /* BoardView.swift */; };
+		88C9B3BD277B5FAF00CAD1DB /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3BC277B5FAF00CAD1DB /* BoardViewModel.swift */; };
+		88C9B3BF277B606200CAD1DB /* BoardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B3BE277B606200CAD1DB /* BoardData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +51,16 @@
 		88C9B39D2779E5C100CAD1DB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		88C9B39F2779E5E500CAD1DB /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		88C9B3A12779E6B600CAD1DB /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		88C9B3A3277A913A00CAD1DB /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
+		88C9B3A5277A948D00CAD1DB /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
+		88C9B3A9277A961E00CAD1DB /* LottoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewModel.swift; sourceTree = "<group>"; };
+		88C9B3AC277AA62700CAD1DB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		88C9B3AE277AAA7E00CAD1DB /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		88C9B3B0277AAB8800CAD1DB /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		88C9B3B7277B5DC900CAD1DB /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		88C9B3BA277B5EA100CAD1DB /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		88C9B3BC277B5FAF00CAD1DB /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
+		88C9B3BE277B606200CAD1DB /* BoardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,21 +96,87 @@
 			children = (
 				88C9B379277947F600CAD1DB /* AppDelegate.swift */,
 				88C9B37B277947F600CAD1DB /* SceneDelegate.swift */,
-				88C9B37D277947F600CAD1DB /* SignInViewController.swift */,
-				88C9B39727795B2900CAD1DB /* MainViewController.swift */,
 				88C9B382277947F800CAD1DB /* Assets.xcassets */,
 				88C9B384277947F800CAD1DB /* LaunchScreen.storyboard */,
 				88C9B387277947F800CAD1DB /* Info.plist */,
-				88C9B38D27794BC400CAD1DB /* SignInView.swift */,
 				88C9B3932779504400CAD1DB /* ApiService.swift */,
-				88C9B3952779574300CAD1DB /* User.swift */,
-				88C9B39927795EF100CAD1DB /* SignInViewModel.swift */,
 				88C9B39B27795FAA00CAD1DB /* Observalble.swift */,
+				88C9B39727795B2900CAD1DB /* MainViewController.swift */,
+				88C9B3952779574300CAD1DB /* User.swift */,
+				88C9B3B6277B441700CAD1DB /* SignIn */,
+				88C9B3B5277B440A00CAD1DB /* Register */,
+				88C9B3A8277A961200CAD1DB /* Lotto */,
+				88C9B3B4277B43E400CAD1DB /* TMDB */,
+				88C9B3B9277B5DCF00CAD1DB /* Board */,
+			);
+			path = Week14;
+			sourceTree = "<group>";
+		};
+		88C9B3A7277A94AB00CAD1DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88C9B3A5277A948D00CAD1DB /* Lotto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88C9B3A8277A961200CAD1DB /* Lotto */ = {
+			isa = PBXGroup;
+			children = (
+				88C9B3A3277A913A00CAD1DB /* LottoViewController.swift */,
+				88C9B3A7277A94AB00CAD1DB /* Model */,
+				88C9B3AB277A962700CAD1DB /* ViewModel */,
+			);
+			path = Lotto;
+			sourceTree = "<group>";
+		};
+		88C9B3AB277A962700CAD1DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				88C9B3A9277A961E00CAD1DB /* LottoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		88C9B3B4277B43E400CAD1DB /* TMDB */ = {
+			isa = PBXGroup;
+			children = (
+				88C9B3AC277AA62700CAD1DB /* Person.swift */,
+				88C9B3AE277AAA7E00CAD1DB /* PersonViewModel.swift */,
+				88C9B3B0277AAB8800CAD1DB /* PersonViewController.swift */,
+			);
+			path = TMDB;
+			sourceTree = "<group>";
+		};
+		88C9B3B5277B440A00CAD1DB /* Register */ = {
+			isa = PBXGroup;
+			children = (
 				88C9B39D2779E5C100CAD1DB /* RegisterViewController.swift */,
 				88C9B39F2779E5E500CAD1DB /* RegisterView.swift */,
 				88C9B3A12779E6B600CAD1DB /* RegisterViewModel.swift */,
 			);
-			path = Week14;
+			path = Register;
+			sourceTree = "<group>";
+		};
+		88C9B3B6277B441700CAD1DB /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				88C9B37D277947F600CAD1DB /* SignInViewController.swift */,
+				88C9B38D27794BC400CAD1DB /* SignInView.swift */,
+				88C9B39927795EF100CAD1DB /* SignInViewModel.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		88C9B3B9277B5DCF00CAD1DB /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				88C9B3B7277B5DC900CAD1DB /* BoardViewController.swift */,
+				88C9B3BA277B5EA100CAD1DB /* BoardView.swift */,
+				88C9B3BC277B5FAF00CAD1DB /* BoardViewModel.swift */,
+				88C9B3BE277B606200CAD1DB /* BoardData.swift */,
+			);
+			path = Board;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,16 +257,26 @@
 			files = (
 				88C9B3A02779E5E500CAD1DB /* RegisterView.swift in Sources */,
 				88C9B39827795B2900CAD1DB /* MainViewController.swift in Sources */,
+				88C9B3BF277B606200CAD1DB /* BoardData.swift in Sources */,
 				88C9B39E2779E5C100CAD1DB /* RegisterViewController.swift in Sources */,
 				88C9B38E27794BC400CAD1DB /* SignInView.swift in Sources */,
+				88C9B3AF277AAA7E00CAD1DB /* PersonViewModel.swift in Sources */,
+				88C9B3A6277A948D00CAD1DB /* Lotto.swift in Sources */,
+				88C9B3AA277A961E00CAD1DB /* LottoViewModel.swift in Sources */,
+				88C9B3B1277AAB8800CAD1DB /* PersonViewController.swift in Sources */,
 				88C9B3942779504400CAD1DB /* ApiService.swift in Sources */,
 				88C9B39C27795FAA00CAD1DB /* Observalble.swift in Sources */,
+				88C9B3B8277B5DC900CAD1DB /* BoardViewController.swift in Sources */,
 				88C9B3962779574300CAD1DB /* User.swift in Sources */,
 				88C9B3A22779E6B600CAD1DB /* RegisterViewModel.swift in Sources */,
 				88C9B39A27795EF100CAD1DB /* SignInViewModel.swift in Sources */,
 				88C9B37E277947F600CAD1DB /* SignInViewController.swift in Sources */,
 				88C9B37A277947F600CAD1DB /* AppDelegate.swift in Sources */,
+				88C9B3A4277A913A00CAD1DB /* LottoViewController.swift in Sources */,
+				88C9B3BB277B5EA100CAD1DB /* BoardView.swift in Sources */,
+				88C9B3AD277AA62700CAD1DB /* Person.swift in Sources */,
 				88C9B37C277947F600CAD1DB /* SceneDelegate.swift in Sources */,
+				88C9B3BD277B5FAF00CAD1DB /* BoardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
