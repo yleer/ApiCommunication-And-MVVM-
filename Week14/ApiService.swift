@@ -18,12 +18,12 @@ enum APIError: Error {
 class ApiService {
     
     static func register(username: String, email: String, password: String, completion: @escaping (User?, APIError?) -> Void) {
+
+        var request = URLRequest(url: EndPoint.signUp.url)
         
-        let url = URL(string: "http://test.monocoding.com/auth/local/register")!
-        var request = URLRequest(url: url)
+        
         request.httpBody = "username=\(username)&password=\(password)&email=\(email)".data(using: .utf8,allowLossyConversion: false)
         request.httpMethod = "POST"
-        
         URLSession.shared.dataTask(with: request) { data, response, error in
             
             if let error = error {
@@ -50,70 +50,34 @@ class ApiService {
             do{
                 let decoder = JSONDecoder()
                 let userData = try decoder.decode(User.self, from: data)
-                print(userData)
                 completion(userData, nil)
             }catch{
                 completion(nil, .invalidData)
             }
-            
-            
         }.resume()
-        
-
     }
+    
     static func login(id: String, pass: String, completion: @escaping (User?, APIError?) -> Void) {
         
-        let url = URL(string: "http://test.monocoding.com/auth/local")!
-        
-        
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: EndPoint.login.url)
         request.httpBody = "identifier=\(id)&password=\(pass)".data(using: .utf8,allowLossyConversion: false)
         request.httpMethod = "POST"
         
         // String -> data, dic -> JSON serialziation , codable
         
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            guard error == nil else{
-                completion(nil, .failed)
-                return
-
-            }
-            guard let data = data else {
-                completion(nil, .noData)
-                return
-            }
-
-            guard let response = response as? HTTPURLResponse else {
-                completion(nil, .invalidResponse)
-                return
-            }
-
-            guard response.statusCode == 200 else {
-                completion(nil, .failed)
-                return
-            }
-
-            do{
-                let decoder = JSONDecoder()
-                let userData = try decoder.decode(User.self, from: data)
-                completion(userData, nil)
-            }catch{
-                completion(nil, .invalidData)
-            }
-        }.resume()
+        
+        URLSession.request(endPoint: request, completion: completion)
+        
     }
     static func lotto(_ number: Int, completion: @escaping (Lotto?, APIError?) -> Void) {
         
         let url = URL(string: "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(number)")!
-        
-        
         URLSession.shared.dataTask(with: url) { data, response, error in
-            
+
             DispatchQueue.main.async {
                 guard error == nil else{
                     completion(nil, .failed)
                     return
-
                 }
                 guard let data = data else {
                     completion(nil, .noData)

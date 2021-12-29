@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8895B954277BF29900A8638D /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895B953277BF29900A8638D /* EndPoint.swift */; };
 		88C9B37A277947F600CAD1DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B379277947F600CAD1DB /* AppDelegate.swift */; };
 		88C9B37C277947F600CAD1DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B37B277947F600CAD1DB /* SceneDelegate.swift */; };
 		88C9B37E277947F600CAD1DB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9B37D277947F600CAD1DB /* SignInViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8895B953277BF29900A8638D /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		88C9B376277947F600CAD1DB /* Week14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C9B379277947F600CAD1DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88C9B37B277947F600CAD1DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				88C9B3A8277A961200CAD1DB /* Lotto */,
 				88C9B3B4277B43E400CAD1DB /* TMDB */,
 				88C9B3B9277B5DCF00CAD1DB /* Board */,
+				8895B953277BF29900A8638D /* EndPoint.swift */,
 			);
 			path = Week14;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				88C9B3A4277A913A00CAD1DB /* LottoViewController.swift in Sources */,
 				88C9B3BB277B5EA100CAD1DB /* BoardView.swift in Sources */,
 				88C9B3AD277AA62700CAD1DB /* Person.swift in Sources */,
+				8895B954277BF29900A8638D /* EndPoint.swift in Sources */,
 				88C9B37C277947F600CAD1DB /* SceneDelegate.swift in Sources */,
 				88C9B3BD277B5FAF00CAD1DB /* BoardViewModel.swift in Sources */,
 			);

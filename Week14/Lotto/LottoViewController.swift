@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class LottoViewController: UIViewController {
+final class LottoViewController: UIViewController {
     
     // 1~ 7 개, 일자, 당첨금액
     let label1 = UILabel()

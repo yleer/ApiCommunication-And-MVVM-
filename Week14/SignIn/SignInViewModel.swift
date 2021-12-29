@@ -29,4 +29,8 @@ class SignInViewModel {
             completion()
         }
     }
+    
+    func getUserNmae() {
+        userName.value = UserDefaults.standard.string(forKey: "userName") ?? ""
+    }
 }

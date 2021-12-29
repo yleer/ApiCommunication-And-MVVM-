@@ -13,6 +13,7 @@ class BoardViewController: UIViewController {
     let viewModel = BoardViewModel()
     
     
+    
     override func loadView() {
         super.loadView()
         self.view = mainView
@@ -23,7 +24,6 @@ class BoardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Gds")
         viewModel.fetchBoard()
     }
     

@@ -31,7 +31,6 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
         mainView.backgroundColor = .white
         viewModel.userName.bind { text in
             self.mainView.userNameTextField.text = text
@@ -48,6 +47,8 @@ class SignInViewController: UIViewController {
         mainView.passwordTextField.addTarget(self, action: #selector(passwordTextFieldDidChange), for: .editingChanged)
        
         mainView.signInButton.addTarget(self, action: #selector(signInButton), for: .touchUpInside)
+        
+        viewModel.getUserNmae()
     }
     
     @objc func segueToRegister() {
