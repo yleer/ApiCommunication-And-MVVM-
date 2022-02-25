@@ -27,15 +27,13 @@ A few motivating and useful examples of how your product can be used. Spice this
 
 A few of the things you can do with GitPoint:
 
-* View user activity feed
-* Communicate on your issue and pull request conversations
-* Close or lock issues
-* Apply labels and assignees
-* Review and merge pull requests
-* Create new issues
-* Star, watch and fork repositories
-* Control your unread and participating notifications
-* Easily search for any user or repository
+* 선택한 위치 주변 새싹 검색
+* 동일한 취미를 가진 새싹과 매칭
+* 새싹들에 대한 정보 확인
+* 매칭된 새싹과 채팅
+* 매칭 종료된 새싹에 대한 리뷰, 신고 
+* In App Purchase 기능을 통한 새싹, 그리고 배경화면 이미지 변경
+* Push Notification을 통한 푸시에 대한 처리
 
 <p align="center">
   <img src = "https://user-images.githubusercontent.com/48948578/155700533-0f34f804-bc1e-416b-b922-c0b31600fbaa.png" width=1000>
