@@ -1,11 +1,11 @@
 # 새싹 취미 공유
-> Short blurb about what your product does.
+> 자신과 같은 취미활동을 하고 싶은 친구를 찾아보세요!<br /> 원하는 위치와 취미를 지정해 근처에 새싹들에게 취미 요청을 하거나 요청을 받아 같이 취미를 즐겨보세요.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-자신과 같은 취미활동을 하고 싶은 친구를 찾아보세요!<br /> 원하는 위치와 취미를 지정해 근처에 새싹들에게 취미 요청을 하거나 요청을 받아 같이 취미를 즐겨보세요.
+
 
 
 ![](header.png)
