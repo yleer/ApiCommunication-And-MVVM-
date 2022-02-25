@@ -1,3 +1,4 @@
+https://github.com/gitpoint/git-point#readme    - 참고
 # 새싹 취미 공유
 > 취미를 공유할 수 있는 친구를 찾아보세요!<br /> 원하는 위치와 취미를 지정해 근처에 새싹들에게 취미 요청을 하거나 요청을 받아 같이 취미를 즐겨보세요.
 
@@ -20,6 +21,29 @@
 ## Usage example
 
 A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+## Features
+
+A few of the things you can do with GitPoint:
+
+* View user activity feed
+* Communicate on your issue and pull request conversations
+* Close or lock issues
+* Apply labels and assignees
+* Review and merge pull requests
+* Create new issues
+* Star, watch and fork repositories
+* Control your unread and participating notifications
+* Easily search for any user or repository
+
+<p align="center">
+  <img src = "http://i.imgur.com/IkSnFRL.png" width=700>
+</p>
+
+<p align="center">
+  <img src = "http://i.imgur.com/0iorG20.png" width=700>
+</p>
+
+
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
