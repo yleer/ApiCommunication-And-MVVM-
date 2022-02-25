@@ -20,7 +20,16 @@ https://github.com/gitpoint/git-point#readme    - 참고
 
 ## Usage example
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+<p align="center">
+  <img src = "https://user-images.githubusercontent.com/48948578/155700533-0f34f804-bc1e-416b-b922-c0b31600fbaa.png" width=1000>
+</p>
+
+<br />
+<br />
+
+<p align="center">
+  <img src = "https://user-images.githubusercontent.com/48948578/155701849-1d224b47-5c93-4b80-a90c-85c3252e9d0d.png" width=700>
+</p>
 
 
 ## Features
@@ -35,16 +44,6 @@ A few of the things you can do with GitPoint:
 * In App Purchase 기능을 통한 새싹, 그리고 배경화면 이미지 변경
 * Push Notification을 통한 푸시에 대한 처리
 
-<p align="center">
-  <img src = "https://user-images.githubusercontent.com/48948578/155700533-0f34f804-bc1e-416b-b922-c0b31600fbaa.png" width=1000>
-</p>
-
-<br />
-<br />
-
-<p align="center">
-  <img src = "https://user-images.githubusercontent.com/48948578/155701849-1d224b47-5c93-4b80-a90c-85c3252e9d0d.png" width=700>
-</p>
 
 
 
