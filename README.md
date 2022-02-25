@@ -34,7 +34,7 @@ https://github.com/gitpoint/git-point#readme    - 참고
 
 ## Features
 
-A few of the things you can do with GitPoint:
+새싹 취미 공유에 기능들:
 
 * 선택한 위치 주변 새싹 검색
 * 동일한 취미를 가진 새싹과 매칭
