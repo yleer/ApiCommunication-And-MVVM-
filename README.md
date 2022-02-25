@@ -21,6 +21,8 @@ https://github.com/gitpoint/git-point#readme    - 참고
 ## Usage example
 
 A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+
+
 ## Features
 
 A few of the things you can do with GitPoint:
@@ -36,8 +38,9 @@ A few of the things you can do with GitPoint:
 * Easily search for any user or repository
 
 <p align="center">
-  <img src = "http://i.imgur.com/IkSnFRL.png" width=700>
+  <img src = "https://user-images.githubusercontent.com/48948578/155700533-0f34f804-bc1e-416b-b922-c0b31600fbaa.png" width=700>
 </p>
+
 
 <p align="center">
   <img src = "http://i.imgur.com/0iorG20.png" width=700>
