@@ -13,8 +13,8 @@
 ## Installation
 
 iOS:
-> 프로젝트 클론 - https://github.com/yleer/SeSac-Service-Level-Project.git
-> zip 파일 다운하기 
+>+ 프로젝트 클론 - https://github.com/yleer/SeSac-Service-Level-Project.git
+>+ zip 파일 다운하기 
 
 
 
