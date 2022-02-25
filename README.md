@@ -3,12 +3,6 @@ https://github.com/gitpoint/git-point#readme    - 참고
 # 새싹 취미 공유
 > 취미를 공유할 수 있는 친구를 찾아보세요!<br /> 원하는 위치와 취미를 지정해 근처에 새싹들에게 취미 요청을 하거나 요청을 받아 같이 취미를 즐겨보세요.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
-
-
 
 ![](header.png)
 
