@@ -38,7 +38,7 @@ A few of the things you can do with GitPoint:
 * Easily search for any user or repository
 
 <p align="center">
-  <img src = "https://user-images.githubusercontent.com/48948578/155700533-0f34f804-bc1e-416b-b922-c0b31600fbaa.png" width=700>
+  <img src = "https://user-images.githubusercontent.com/48948578/155700533-0f34f804-bc1e-416b-b922-c0b31600fbaa.png" width=1000>
 </p>
 
 
