@@ -12,17 +12,10 @@
 
 ## Installation
 
-OS X & Linux:
+iOS:
+프로젝트 클론 - https://github.com/yleer/SeSac-Service-Level-Project.git
+zip 파일 다운하기
 
-```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
-```
 
 ## Usage example
 
