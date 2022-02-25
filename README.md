@@ -43,8 +43,9 @@ A few of the things you can do with GitPoint:
 
 
 <p align="center">
-  <img src = https://user-images.githubusercontent.com/48948578/155701849-1d224b47-5c93-4b80-a90c-85c3252e9d0d.png" width=700>
+  <img src = "https://user-images.githubusercontent.com/48948578/155701849-1d224b47-5c93-4b80-a90c-85c3252e9d0d.png" width=700>
 </p>
+
 
 
 
