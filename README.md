@@ -40,9 +40,10 @@ A few of the things you can do with GitPoint:
 * 동일한 취미를 가진 새싹과 매칭
 * 새싹들에 대한 정보 확인
 * 매칭된 새싹과 채팅
-* 매칭 종료된 새싹에 대한 리뷰, 신고 
+* 매칭 종료 후 새싹에 대한 리뷰, 신고 
 * In App Purchase 기능을 통한 새싹, 그리고 배경화면 이미지 변경
 * Push Notification을 통한 푸시에 대한 처리
+* 개인정보 수정 및 
 
 
 
