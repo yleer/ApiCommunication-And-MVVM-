@@ -74,9 +74,10 @@ npm test
  https://stackoverflow.com/questions/29882775/resignfirstresponder-vs-endediting-for-keyboard-dismissal/29882945 에서 차이 공부해보자.
  
  * 1/29
-  * Api 명세서에 명시되어 있는데로 post 콜을 진행하였다. 하지만 client error를 명시하는 501에러가 발생하였다. 다른 통신들은 아무 문제 작동하여 무엇이 문제인지 모르고 있어 서버측에 어떤 문제가 있나 문의하게 되었고, 나의 콜을 보니 배열값 파라메터가   
+  * Api 명세서에 명시되어 있는데로 post 콜을 진행하였다. 하지만 client error를 명시하는 501에러가 발생하였다. 다른 통신들은 아무 문제 작동하여 무엇이 문제인지 모르고 있어 서버측에 어떤 문제가 있나 문의하는 일이 있었다. 아래의 사진이 api가 필요로 하는 파라메터값이고, 그 다음이 내가 보낸 배열의 값이 서버측에서 받아들인 값이다. 
+   <img src = "https://user-images.githubusercontent.com/48948578/155841220-99e896a4-2c4a-478a-aaf0-1a7fd90f61d5.png" height=50>
    <img src = "https://user-images.githubusercontent.com/48948578/155841213-3dc3242e-3b8a-487e-b668-a158275a05f1.png" height=50>
-      <img src = "https://user-images.githubusercontent.com/48948578/155841220-99e896a4-2c4a-478a-aaf0-1a7fd90f61d5.png" height=50>
+
 
 
 ## Meta
