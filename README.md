@@ -48,15 +48,15 @@ https://github.com/gitpoint/git-point#readme    - 참고
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Tech Stack
->MapKit을 사용한 지도 표현
->Alamofire를 아용한 rest api 통신
->SnapKit을 이용한 UI 작성
->SocketIO를 통한 채팅 구현
->Realm을 이용한 채팅 내용 저장 및 불러오기 
->FireBase Auth를 통한 전화번호 인증
->FCM을 이용한 push notification 구현
->In App Purchase 기능
->MVVM, MVC 패턴 사용
+>+ MapKit을 사용한 지도 표현
+>+ Alamofire를 아용한 rest api 통신
+>+ SnapKit을 이용한 UI 작성
+>+ SocketIO를 통한 채팅 구현
+>+ Realm을 이용한 채팅 내용 저장 및 불러오기 
+>+ FireBase Auth를 통한 전화번호 인증
+>+ FCM을 이용한 push notification 구현
+>+ In App Purchase 기능
+>+ MVVM, MVC 패턴 사용
 
 ```sh
 make install
