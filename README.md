@@ -91,11 +91,13 @@ npm test
  
 * 2/17
   * 채팅을 보낼때 새로운 채팅을 채팅 데이터에 추가한 후 가장 최신의 채팅을 볼 수 있게 테이블 뷰를 맨 아래로 scroll 해줘야 한다. 하지만 맨 아래로 스크롤이 안되는 문제가 있었다. 알고 보니 원인은 아래의 코드에 있었다.
-  
-   ```
+
+
+```
  mainView.tableView.scrollToRow(at: IndexPath(row: data.count - 1, section: 0), at: .bottom, animated: true)
  mainView.tableView.reloadData()
    ```
+
  
 추가된 채팅 데이터를 tableview에 반영하기 위해 reloadData를 한 후 스크롤을 해줘야 하는데 순서를 바꿔 작성한 것이다. 이러한 간단한 문제이지만 실수를 할 수 있다는 것을 알게 되었다.
 
