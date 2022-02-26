@@ -70,7 +70,7 @@ npm test
    위 노티피케이션을 통해 키보드 제어가 가능하였고, 이를 통해 키보드의 상태에 따라 UI에 변화를 줄 수 있었다.
    이때 texteField들은 view.endEditing(true)를 사용하여 키보드 내리는 것이 가능했지만, searchBar에는 이 코드가 작동하지 않았다. 검색을 통해 resignFirstResponder()사용 하면 된다는 것을 알게 되었다.
   
- https://stackoverflow.com/questions/29925373/how-to-make-keyboard-dismiss-when-i-press-out-of-searchbar-on-swift 나와 같은 문제를 갖고 있음.
+ https://stackoverflow.com/questions/29925373/how-to-make-keyboard-dismiss-when-i-press-out-of-searchbar-on-swift 나와 같은 문제를 갖고 있음. <br />
  https://stackoverflow.com/questions/29882775/resignfirstresponder-vs-endediting-for-keyboard-dismissal/29882945 에서 차이 공부해보자.
 
 * 0.2.1
