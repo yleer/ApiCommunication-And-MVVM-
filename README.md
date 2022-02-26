@@ -67,10 +67,11 @@ npm test
    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)               
    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
    ```
-
-1/28 일지 원래는 IQKeyboard를 이용하여 키보드 내림 올림 구현을 했다. 하지만 디자인에 있어 그냥 키보드를 올리고 내리는 기능 이외에 키보드가 올라와 있을때 버튼의 위치, 크기가 변해야 해 키보드 올림 내림을 직접 구현하기로 함.  노티피케이션 코드를 이용하여 키도드가 올라가고 내려갈때에 대응 할 수 있음. textfield들에서는 view.endEditing(true)를 사용하면 키보드가 내려갔지만 searchbar에서는 이코드를 사용해도 키보드가 내려가지 않음. 그 대신 resignFirstResponder()를 사용하면 내려가는 것을 파악. 심지어 searchbar에서는 노티피케이션도 안되는 거 같음 https://stackoverflow.com/questions/29925373/how-to-make-keyboard-dismiss-when-i-press-out-of-searchbar-on-swift 나와 같은 문제를 갖고 있음.
-
-https://stackoverflow.com/questions/29882775/resignfirstresponder-vs-endediting-for-keyboard-dismissal/29882945 에서 차이 공부해보자.
+   위 노티피케이션을 통해 키보드 제어가 가능하였고, 이를 통해 키보드의 상태에 따라 UI에 변화를 줄 수 있었다.
+   이때 texteField들은 view.endEditing(true)를 사용하여 키보드 내리는 것이 가능했지만, searchBar에는 이 코드가 작동하지 않았다. 검색을 통해 resignFirstResponder()사용 하면 된다는 것을 알게 되었다.
+  
+ https://stackoverflow.com/questions/29925373/how-to-make-keyboard-dismiss-when-i-press-out-of-searchbar-on-swift 나와 같은 문제를 갖고 있음.
+ https://stackoverflow.com/questions/29882775/resignfirstresponder-vs-endediting-for-keyboard-dismissal/29882945 에서 차이 공부해보자.
 
 * 0.2.1
     * CHANGE: Update docs (module code remains unchanged)
