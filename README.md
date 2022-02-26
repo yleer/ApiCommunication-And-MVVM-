@@ -72,25 +72,18 @@ npm test
   
  https://stackoverflow.com/questions/29925373/how-to-make-keyboard-dismiss-when-i-press-out-of-searchbar-on-swift 나와 같은 문제를 갖고 있음. <br />
  https://stackoverflow.com/questions/29882775/resignfirstresponder-vs-endediting-for-keyboard-dismissal/29882945 에서 차이 공부해보자.
-
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
-
+ 
+ * 1/29
+  * Api 명세서에 명시되어 있는데로 post 콜을 진행하였다. 하지만 client error를 명시하는 501에러가 발생하였다. 다른 통신들은 아무 문제 작동하여 무엇이 문제인지 모르고 있어 서버측에 어떤 문제가 있나 문의하게 되었고, 나의 콜을 보니 배열값 파라메터가   
+ 
+"https://user-images.githubusercontent.com/48948578/155841213-3dc3242e-3b8a-487e-b668-a158275a05f1.png"
+"https://user-images.githubusercontent.com/48948578/155841220-99e896a4-2c4a-478a-aaf0-1a7fd90f61d5.png"
 ## Meta
 
 Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
+
 
 [https://github.com/yourname/github-link](https://github.com/dbader/)
 
