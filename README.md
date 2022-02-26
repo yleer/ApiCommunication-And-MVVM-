@@ -1,5 +1,3 @@
-https://github.com/gitpoint/git-point#readme    - 참고
-
 # 새싹 취미 공유
 > 취미를 공유할 수 있는 친구를 찾아보세요!<br /> 원하는 위치와 취미를 지정해 근처에 새싹들에게 취미 요청을 하거나 요청을 받아 같이 취미를 즐겨보세요.
 
@@ -41,12 +39,6 @@ https://github.com/gitpoint/git-point#readme    - 참고
 * 개인정보 수정 및 
 
 
-
-
-
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
-
 ## Tech Stack
 >+ MapKit을 사용한 지도 표현
 >+ Alamofire를 아용한 rest api 통신
@@ -62,8 +54,14 @@ _For more examples and usage, please refer to the [Wiki][wiki]._
 make install
 npm test
 ```
+1/25 일지 네트워크 통신으로 회원 정보를 가져오는데 명세서에서의 응답과 나의 get을 통해 가져온 응답에 차이가 있었다. 알고보니 계정의 값이 업데이트 되어, 계정의 정보를 주는 get을 했을 시 주는 응답에 변화가 생겼던 것이다. 나는 업데이트 되기 이전에 회원가입이 완료 되어, 같은 get 콜을 사용하더라도 다른 응답이 왔던 것이다.
 
-## Release History
+## 회고 
+* 1/25
+  * API 통신 중 GET 메소드를 통해 정보를 가져와야 하는 부분이 있었는데, 서버측에서의 응답값을 바꾸어 에러가 났다. 이러한 문제를 최소화하기 위해 백앤드 측과 지속적인 소통이 필요할 것 같다.
+* 1/26 
+  * cellForRowAt을 통해 tableviewCell을 지정해주는 함수에서 각 cell마다 지정해주어야 하는 값이 많아 함수가 거대해졌다. 이 부분을 최소화하기 위하여 각 custom cell에서 configure 함수를 따로 만들어 그 곳에서 cell을 초기화 할 수 있도록 하였다.
+  * Custom colors들과 custom images들이 다수 존재하였는데 이들을 사용하기 위해 직접 값을 사용하는데 번거러움을 느꼈다. 이를 좀 더 편하게 사용하기 위하여 UIColor에 extension을 사용하여 사용에 좀더 용이하게 만들었다. 그리고 Images들을 좀더 편하게 사용하기 위해 enum을 만들어 접근을 쉽게 했다.
 
 * 0.2.1
     * CHANGE: Update docs (module code remains unchanged)
