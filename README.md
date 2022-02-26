@@ -62,8 +62,9 @@ npm test
   * Custom colors들과 custom images들이 다수 존재하였는데 이들을 사용하기 위해 직접 값을 사용하는데 번거러움을 느꼈다. 이를 좀 더 편하게 사용하기 위하여 UIColor에 extension을 사용하여 사용에 좀더 용이하게 만들었다. 그리고 Images들을 좀더 편하게 사용하기 위해 enum을 만들어 접근을 쉽게 했다.
  * 1/28
    * 기존에 키보드 올림 내림 구현을 IQKeyboard 라이브러리를 사용하여 구현했다. 하지만 디자인에 있어 키보드 상태에 따라 UI가 변화하여 그져 올리고 내리는 것만으로는 부족함을 느꼈다. 이를 해결하기 위해 키보드 내림과 올림을 직접 구현하기로 했다.
-   NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)               
-   NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+   
+   ```NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)               
+   NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)```
 
 1/28 일지 원래는 IQKeyboard를 이용하여 키보드 내림 올림 구현을 했다. 하지만 디자인에 있어 그냥 키보드를 올리고 내리는 기능 이외에 키보드가 올라와 있을때 버튼의 위치, 크기가 변해야 해 키보드 올림 내림을 직접 구현하기로 함.  노티피케이션 코드를 이용하여 키도드가 올라가고 내려갈때에 대응 할 수 있음. textfield들에서는 view.endEditing(true)를 사용하면 키보드가 내려갔지만 searchbar에서는 이코드를 사용해도 키보드가 내려가지 않음. 그 대신 resignFirstResponder()를 사용하면 내려가는 것을 파악. 심지어 searchbar에서는 노티피케이션도 안되는 거 같음 https://stackoverflow.com/questions/29925373/how-to-make-keyboard-dismiss-when-i-press-out-of-searchbar-on-swift 나와 같은 문제를 갖고 있음.
 
