@@ -4,9 +4,9 @@
 
 # Contents
 + [Installation](#Installation)
-+ [Usage example](#Usage example)
++ [Usage example](#Usage-example)
 + [Features](#Features)
-+ [Tech Stack](#Tech Stack)
++ [Tech Stack](#Tech-Stack)
 + [개발 일지](#개발-일지)
 + [회고](#회고)
 
