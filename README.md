@@ -2,6 +2,14 @@
 > 취미를 공유할 수 있는 친구를 찾아보세요!<br /> 원하는 위치와 취미를 지정해 근처에 새싹들에게 취미 요청을 하거나 요청을 받아 같이 취미를 즐겨보세요.
 
 
+# Contents
++ [Installation](#Installation)
++ [Usage example](#Usage example)
++ [Features](#Features)
++ [Tech Stack](#Tech Stack)
++ [개발 일지](#개발 일지)
++ [회고](#회고)
+
 ![](header.png)
 
 ## Installation
@@ -50,10 +58,6 @@
 >+ In App Purchase 기능
 >+ MVVM, MVC 패턴 사용
 
-```sh
-make install
-npm test
-```
 ## 개발 일지 
 * 1/25
   * API 통신 중 GET 메소드를 통해 정보를 가져와야 하는 부분이 있었는데, 서버측에서의 응답값을 바꾸어 에러가 났다. 이러한 문제를 최소화하기 위해 백앤드 측과 지속적인 소통이 필요할 것 같다.
@@ -117,20 +121,3 @@ npm test
 
 
 
-
-
-## Contributing
-
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
