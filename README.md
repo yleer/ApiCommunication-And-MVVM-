@@ -80,7 +80,7 @@ npm test
    <img src = "https://user-images.githubusercontent.com/48948578/155841220-99e896a4-2c4a-478a-aaf0-1a7fd90f61d5.png" height=50>
    <img src = "https://user-images.githubusercontent.com/48948578/155841213-3dc3242e-3b8a-487e-b668-a158275a05f1.png" height=50>
    
-   위에서 확인 한 것과 같이 배열 인자 값이 올바르지 않게 인자로 넘어간 것을 알게 되었고, Alamofire에서 배열 값을 보낼때 parameter encoding을 해줘아햐는 사실을 알게 되었다. encoding 옵션을 추가하여 통신을 진행하자 통신이 잘 되는 것을 확인 할 수 있었다.
+   > 위에서 확인 한 것과 같이 배열 인자 값이 올바르지 않게 인자로 넘어간 것을 알게 되었고, Alamofire에서 배열 값을 보낼때 parameter encoding을 해줘아햐는 사실을 알게 되었다. encoding 옵션을 추가하여 통신을 진행하자 통신이 잘 되는 것을 확인 할 수 있었다.
 
 * 2/5
   * 한 특정 화면에서 입력된 사용자의 데이터가 다른 화면에서도 사용이 된다. 하지만 이 데이터가 사용되는 모든 화면에 모두 값을 전달하는 것은 중복되는 코드가 많고 보기에도 좋지 않다는 점을 느꼈다. 이를 해결하기 우해 Singleton 패턴을 사용하게 되었고, 사용자의 관한 임시 정보를 Singleton을 통해 보관하여 해결하였다. 
