@@ -69,10 +69,11 @@ npm test
    ```
    위 노티피케이션을 통해 키보드 제어가 가능하였고, 이를 통해 키보드의 상태에 따라 UI에 변화를 줄 수 있었다.
    이때 texteField들은 view.endEditing(true)를 사용하여 키보드 내리는 것이 가능했지만, searchBar에는 이 코드가 작동하지 않았다. 검색을 통해 resignFirstResponder()사용 하면 된다는 것을 알게 되었다.
+   
   ```
  https://stackoverflow.com/questions/29925373/how-to-make-keyboard-dismiss-when-i-press-out-of-searchbar-on-swift 나와 같은 문제를 갖고 있음. <br />
  https://stackoverflow.com/questions/29882775/resignfirstresponder-vs-endediting-for-keyboard-dismissal/29882945 에서 차이 공부해보자.
-    ```
+  ```
  
  * 1/29
     * Api 명세서에 명시되어 있는데로 post 콜을 진행하였다. 하지만 client error를 명시하는 501에러가 발생하였다. 다른 통신들은 아무 문제 작동하여 무엇이 문제인지 모르고 있어 서버측에 어떤 문제가 있나 문의하는 일이 있었다. 아래의 사진이 api가 필요로 하는 파라메터값이고, 그 다음이 내가 보낸 배열의 값이 서버측에서 받아들인 값이다. 
